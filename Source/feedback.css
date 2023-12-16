@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'poppins', sans-serif;
+    overflow: hidden;
+    background-image: url(pink.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgba(26, 13, 13, 0.1);
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 15px;
+}
+
+.container{
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-in 1s ease forwards;
+  }
+  
+  @keyframes fade-in {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.up{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.up h1{
+    font-size: 3rem;
+    color: white;
+    transition: 0.5s ;
+    width: 110%;
+}
+
+.up p{
+    color: white;
+    font-size: 1rem;
+    opacity: 70%;
+    transition: 0.7s;
+}
+
+input{
+    width: 52vw;
+    height: 30vh;
+    border-radius: 15px;
+}
+
+button{
+    margin-top: 2vh;
+    width: 7vw;
+    height: 5vh;
+    border-radius: 10px;
+    font-family: 'poppins', sans-serif;
+    background-color: #ff298d;
+    color: white;
+}
+
+span{
+    width: 4vw;
+    transform: scale(3);
+}
+
+.star-rating {
+    font-size: 50px;
+    cursor: pointer;
+    padding: 4%;
+}
+
+.star {
+    color: rgb(233, 229, 229);
+}
+
+.star:hover,
+.star.active {
+    color: rgb(255, 217, 0);
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+}
+.checked {
+    color: orange;
+  }
+
+
+
+  @media screen and (max-width: 768px) {
+    body{
+        font-size: 10px;
+    }
+    .rate{
+        display: none;
+    }
+    h1{
+        width: 2px;
+    }
+    p{
+        display: none;
+    }
+    input{
+        height: 25vh;
+    }
+    button{
+        width: 25vw;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    body{
+        font-size: 10px;
+    }
+    .rate{
+        display: none;
+    }
+}

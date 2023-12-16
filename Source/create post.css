@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+}
+
+html{
+    display: flex;
+    flex-grow: 1;
+}
+
+body{
+    background-image: url(post1.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'poppins', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 75%;
+    border: solid white 1px;
+    border-radius: 12px;
+    background: rgb(255, 255, 255);
+}
+
+table tr,td{
+    padding: 8px;
+}
+
+.title{
+    width: 20vw;
+    height: 3vh;
+    border-radius: 7px;
+}
+
+.file{
+    font-family: 'poppins', sans-serif;
+}
+
+.description{
+    border-radius: 8px;
+    width: 40vw;
+    height: 30vh;
+    word-wrap: break-word;
+    word-break:  break-all;
+}
+
+.button1{
+    border-radius: 8px;
+    background-color: #252830;
+    color:white;
+    width:80px;
+    height: 30px;
+    transition: 0.3s;
+}
+
+.button1 a{
+    color: white;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+}
+
+.button a{
+    color: #252830;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+}
+
+.button{
+    border-radius: 8px;
+    background-color: white;
+    color:#252830;
+    width:80px;
+    height: 30px;
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(0.95);
+}
+
+@media screen and (max-width: 1200px) {
+    body{
+        height: 100vh;
+        background-color: white;
+        background-image: none;
+    }
+    .main {
+        width: 70%; 
+    }
+
+    .description {
+        height: 25vh; 
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    body{
+        height: 100vh;
+        background-color: white;
+        background-image: none;
+        font-size: smaller;
+    }
+    .main {
+        column-gap: 20vh;
+        width: 100vw;
+        height: 100vh; 
+    }
+    input{
+        width:30vw;
+    }
+    button{
+        width:5vw;
+        height: 3vh;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    body{
+        height: 100vh;
+        background-color: white;
+        background-image: none;
+        font-size: smaller;
+    }
+    .main {
+        column-gap: 20vh;
+        height: 100vh;
+        width: 100%; 
+    }
+    input{
+        width:30vw;
+    }
+    button{
+        width:5vw;
+        height: 3vh;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    body{
+        height: 100vh;
+        background-color: white;
+        background-image: none;
+        font-size: smaller;
+    }
+    .main {
+        column-gap: 20vh;
+        height: 100vh;
+        width: 100%; 
+    }
+    input{
+        width:30vw;
+    }
+    button{
+        width:5vw;
+        height: 3vh;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    body{
+        height: 100vh;
+        background-color: white;
+        background-image: none;
+        font-size: smaller;
+    }
+    body {
+        flex-direction: column;
+    }
+
+    .main {
+        column-gap: 20vh;
+        height: 100vh;
+        width: 100%; 
+    }
+
+    .title {
+        width: 100%; 
+    }
+
+    .description {
+        width: 100%; 
+        height: 10vh; 
+    }
+
+    input{
+        width:30vw;
+    }
+    button{
+        width:5vw;
+        height: 3vh;
+    }
+}

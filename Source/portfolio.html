@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href = "portfolio.css" rel="stylesheet">
+
+</head>
+<body>
+    <header id="top">
+        <nav>
+            <div class = "left">ANUVIND MP</div>
+            <div class = "right">
+                <ul>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="https://linktr.ee/anuvindmp">Socials</a></li>
+                    <li><a href="https://github.com/anuvindmp">Github <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                      </svg></a></li>
+                    <li><a href="#footer" onmouseover="dropdown()" onmouseleave="dropblck()">Contact me</a></li>
+                    
+            </div>
+        </nav>
+    </header> 
+
+    <main>
+         <section class ="firstSection">
+            <div class = "leftSection">
+                Hi, My name is <span class="purple">Anuvind</span>
+                <div>and I'm an enthusiastic </div>  
+                <span id="element"></span> 
+                <a id="openResume" href="resume.html"><h3>OPEN RESUME</h3></a> 
+            </div>    
+            <div class="rightSection">
+                <img src="1.png">
+            </div>
+         </section>
+         <hr>
+
+         <section class ="secondSection">
+            <div class="aboutme-image">
+                <img src="2.png">
+            </div>
+            <div class = "aboutme">
+                <h1 id = "about">About me</h1>
+                <br>
+                <p>I am an enthusiastic student of Artificial Intelligence. I am studying B.Tech in Artificial Intelligence from AMRITA VIDYAPEETHAM. I had my higher secondary degree from Anjarakkandy HSS Kannur.
+                    <br>A motivated and dedicated student. Seeking an opportunity to contribute my skills and expertise, while further developing my professional growth.</p>
+         </section>
+         <hr>
+
+         <section class ="thirdSection">
+            <div class ="skills">
+            <h1>Skills</h1>
+            <br>
+            <ul>
+                <li>Webpage designing</li>
+                <li>AutoDesk designing</li>
+                <li>word & powerpoint</li>
+                <li>Programming</li>
+                <ol>
+                    <div class ="programming">
+                    <li>C programming</li>
+                    <li>python</li>
+                    <li>java</li>
+                    </div>
+                </ol>
+                <li>Problem solving</li>                
+                <li>Debugging and troubleshooting</li>                
+                <li>Communication & collaboration</li>                
+                <li>Continuous learning</li>
+            </ul>
+        </div>
+            <div class="skills-image">
+                <img src="3.png">
+            </div>
+         </section><br><br>
+         <hr>
+
+         <section class ="fourthSection">
+            <div class="achievements-image">
+                <img src="4.png">
+            </div>
+            <div class ="achievements">
+            <h1>Achievements</h1>
+            <br>
+            <ul>
+                <li>C-programming certification</li>
+                <li>python certification</li>
+                <li>Completed a 2 day ROBO-ML workshop.</li>
+                <li>Won numerous coding competition.</li>
+                <li>Creative Achievement: Won Designing competition</li>
+                <li>Team Collaboration: Effectively coordinated with team members, assigning tasks,<br> and conducting regular meetings to monitor progress and resolve any challenges.</li>
+            </ul>
+        </div>
+         </section>
+
+
+    </main> 
+
+    <center><div class="backToTop">
+    <a href="#top"><h2>BACK TO TOP</h2></a>
+    </div></center>
+
+    <footer id = "footer">
+        &copy; anuvind mp
+        <br>
+        <a href="https://www.linkedin.com/in/anuvind-mp-36a271246"><u>anuvindmp.profile.com</u></a>
+        <br>
+        author : Anuvind MP
+        <br>
+        mail: anuvindmp292003@gmail.com 
+        <br>   
+        call/text : +91 9947383963
+    </footer>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', {
+                strings: ['Student','Webpage Designer', 'Programmer', 'Developer','Student'],
+                typeSpeed: 70,
+            });
+        </script>
+</body>
+</html>

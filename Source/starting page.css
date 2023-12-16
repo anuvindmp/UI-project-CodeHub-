@@ -1,0 +1,183 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.nav{
+    position:absolute;
+    top:1%;
+    right: 2%;
+    display: flex;
+    justify-content: right;
+    gap:25px
+}
+
+#barbie{
+    display: none;
+}
+
+.nav a{
+    margin-top: 9px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s ease-out;
+}
+
+.nav button{
+    background-color: #131417;
+    border: 0;
+}
+
+.nav img{
+    mix-blend-mode: difference;
+}
+
+.half-black, .half-white {
+    width: 50vw;
+    height: 100vh;
+}
+
+.half-black {
+    background-color: #131417;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+}
+
+.half-white {
+    background-color: white;
+    background-image: url(orange.jpg);
+    display: flex;    
+}
+
+.half-black h1{
+    font-size: 42px;
+}
+
+.content{
+    padding-left: 50px;
+}
+
+.content p{
+    opacity: 60%;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    border: 0;
+    box-shadow: rgba(255, 255, 255, 0.555) 0px 3px 8px;
+}
+
+.container button{
+    border-radius: 15px;
+    width: 150px;
+    font-size: 17px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+}
+
+.buttons button.login {
+    background-color: #d86034;
+    color: white;
+}
+
+button{
+    transition: 0.3s ease;
+}
+
+.login a{
+    text-decoration: none;
+    color: white;
+}
+.signup a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+button:hover{
+    transform: scale(0.9);
+}
+
+a:hover{
+    font-size: large;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .half-black, .half-white {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .half-black {
+        align-items: center;
+    }
+
+    .half-black h1 {
+        font-size: 32px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons button {
+        width: 100%;
+    }
+
+    .nav{
+        padding: 20px;
+    }
+
+    #hehe{
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .half-black, .half-white {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .half-black h1 {
+        font-size: 36px;
+    }
+
+    .content {
+        padding: 30px;
+    }
+
+
+}

@@ -1,0 +1,333 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(6, 6, 66);
+    color: white;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height:80px;
+    background-color: rgb(50, 45, 106)   
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin : 0 25px;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: 'poppins', sans-serif;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+
+}
+nav ul li:hover{
+    color: rgb(116, 116, 230);
+    font-size: 1.3rem;
+    font-weight: 800;
+    transition: 0.35s;
+}
+nav ul li a:hover{
+    color: rgb(116, 116, 230);
+    font-size: 1.3rem;
+    font-weight: 800;
+    transition: 0.35s;
+}
+
+.left{
+    font-size: large;
+    font-weight: 600;
+}
+.left:hover{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(116, 116, 230);
+    transition: 0.35s;
+}
+
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.firstSection > div{
+    width: 38%;
+}
+
+.leftSection{
+    font-size: 2.5rem;
+    margin: 50px 0;
+    font-weight: 600;
+    align-self: center;
+}
+.rightSection{
+   height: auto;
+   padding-top: 20px;
+}
+
+.rightSection img{
+    padding-top: 180px;
+    width: 70%;
+}
+.rightSection:hover{
+    width:600px;
+    opacity: 50%;
+    transition: 0.35s;
+}
+
+.purple{
+    color: rgb(158, 90, 221);
+}
+.purple:hover{
+    font-size: larger;
+    transition: 0.35s;
+}
+
+#element{
+    color: rgb(158, 90, 221);
+}
+#element:hover{
+    color: rgb(158, 90, 221);
+    font-size: larger;
+    transition: 0.5s;
+}
+
+h3{
+    background-color: rgb(140, 140, 199);
+    width: 30%;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 25px;
+}
+#openResume{
+    text-decoration: none;
+    color: white;
+}
+h3:hover{
+    text-decoration: wavy;
+    color: white;
+    font-size: 20.5px;
+    transition: 0.35s;
+}
+main hr{
+    width : 90%;
+    margin: auto;
+}
+
+.secondSection{
+    display: flex;
+    justify-content: baseline;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.aboutme h1{
+    margin-top: 90px;
+    font-size: 35px;
+    text-align: left;
+}
+
+.secondSection img{
+    width: 400px;
+    align-items: flex-end;
+    margin:40px 30px;
+}
+.aboutme-image{
+    margin-top:50px;
+}
+.aboutme-image img:hover{
+    opacity: 50%;
+    width:375px;
+    transition: 0.35s;
+}
+.aboutme p{
+    font-size: 18px;
+    margin-right: 50px;
+    margin-top:15px;
+}
+
+.thirdSection{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 35px;
+}
+
+.skills h1{
+    text-align: left;
+    font-size: 35px;
+}
+.skills-image img{
+    width: 500px;
+    margin-top: 55px;
+}
+.skills-image img:hover{
+    width: 450px;
+    opacity:50%;
+    transition: 0.35s;
+}
+.skills ul li{
+    font-size: 20px;
+    padding: 5px;
+    text-align: left;
+}
+.skills ul li:hover{
+    font-size: 22px;
+    text-align: left;
+    transition: 0.35s;
+}
+
+.fourthSection{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 35px;
+}
+
+.achievements h1{
+    text-align: left;
+    font-size: 35px;
+    margin-top:35px;
+}
+.achievements-image img{
+    width: 450px;
+    margin-top: 15px;
+}
+.achievements-image img:hover{
+    width: 420px;
+    opacity:50%;
+    transition: 0.35s;
+}
+.achievements ul li{
+    font-size: 20px;
+    text-align: left;
+    padding: 5px;
+    margin-top: 3px;
+}
+.achievements ul li:hover{
+    font-size: 22px;
+    text-align: left;
+    transition: 0.35s;
+}
+
+footer{
+    margin-bottom: 7px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgb(50, 45, 106);
+    height:120px;
+    text-align: center;
+    font-size: 15px;
+    padding:2px;
+    align-items: center;
+    border-radius: 20px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.backToTop{
+    margin-bottom: 10px;
+}
+.backToTop a:hover{
+    font-size: larger;
+    transition: 0.5s;
+}
+h2{
+    background-color: rgb(140, 140, 199);
+    width: 25%;
+    text-align:center;
+    border-radius: 25px;
+}
+.backToTop a{
+    text-decoration:none ;
+    color:white;
+}
+
+.programming{
+    text-align: center;
+    margin-left: 23px;
+    color: rgb(194, 148, 237);
+}
+.programming:hover{
+    text-align: center;
+    margin-left: 23px;
+    font-size: 20px;
+    color:rgb(158, 90, 221);
+    font-weight: 600;
+    transition: 0.35s;
+}
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .firstSection > div{
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .secondSection img,
+    .skills-image img,
+    .achievements-image img{
+        width: 100%;
+        max-width: 100%;
+        margin: 40px 0;
+    }
+    .backToTop{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li{
+        font-size: 10px;
+        margin : 0 12px;
+    }
+
+    .leftSection{
+        font-size: 1rem;
+    }
+
+    h3{
+        width: 50%;
+        font-size: 12px;
+    }
+
+    .aboutme h1,
+    .skills h1,
+    .achievements h1{
+        font-size: 25px;
+    }
+
+    .aboutme p,
+    .skills ul li,
+    .achievements ul li{
+        font-size: 12px;
+    }
+
+    footer{
+        font-size: 10px;
+    }
+    .backToTop{
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,403 @@
+body{
+    background-color: #202124;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+}
+
+.dp_img img {
+	border-radius: 50%;
+	border: 5px solid rgba(255, 255, 255, 0.432);
+    margin-top: 0px;
+    
+}
+
+.Container{
+    display: flex;
+    background-color: #202124;
+    justify-content: space-between;
+
+} 
+
+.dp{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 90vh;
+    width: 35vw;
+    background-color: #35363a;
+    border-radius: 5px;
+    padding: 10px;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 15px;
+}
+
+
+.prof_name{
+    margin-top: 0px;
+}
+
+.prof_mail{
+    margin-top: -15px;
+    font-size: small;
+}
+
+.abt{
+    margin-top: 100px;
+    color: white;
+}
+
+.abt_descrip{
+    margin-top: -20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav{
+    margin-left: 0.84%;
+    margin-top: 0%;
+    width:98vw;
+    height:10vh;
+    background: rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    scroll-behavior: none;
+    overflow: hidden;
+}
+
+#logo{
+    margin-left: 17px;
+}
+
+
+button{
+    background-color: #252830;
+    border: 0px;
+    border-radius: 15px;
+}
+
+#barbie{
+    display: none;
+}
+
+#barbiepic{
+    display: none;
+}
+
+#opp{
+    margin-right: 17px;
+    transition: 0.3s;
+    background-color: #2b2c2f00;
+}
+
+#opp:hover{
+    transform: scale(1.2);
+}
+
+.Cancel{
+    width: 120px;
+    height: 50px;
+    margin-right: 20px;
+    color: white;
+    background-color: #d86034;
+    font-size: medium;
+    font-family: "poppins", sans-serif;
+    transition: 0.3s;
+}
+
+.create{
+    width: 120px;
+    height: 50px;
+    color: white;
+    background-color: #d86034;
+    font-size: medium;
+    font-family: "poppins", sans-serif;
+    transition: 0.3s;
+}
+
+.butt{
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 70px;
+}
+
+input{
+    border-radius: 10px;
+}
+
+textarea{
+    border-radius: 10px;
+}
+
+button:hover{
+    transform: scale(0.9);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#tname{
+    margin-top: 25px;
+    height: 35px;
+    width: 200px;
+}
+
+.tags{
+    margin-top: 50px;
+    margin-left: -230px; 
+    font-size: 28px;
+    font-family: "poppins",sans-serif;   
+}
+
+
+#tag{
+    margin-left: -185px;       
+}
+
+.tag:checked{
+    accent-color: #d86034;
+}
+
+.Create {
+    font-size: 28px;
+    font-family: "poppins",sans-serif;
+
+}
+
+.personal{
+    text-align: center;
+    font-size: 25px;
+}
+
+h3{
+    margin-left: -75px;
+    font-size: larger;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #35363a;
+    border-radius: 20px;
+    padding: 30px;
+    padding-left: 35px;
+    width: 650px;
+    margin-top: 6%;
+    margin-right: 10%;
+}
+
+.main #name{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+    color: #a1a8ae;
+}
+
+#firstname,#lastname{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+#thirdname,#fourthname{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:1rem;
+}
+
+.main h2{
+    font-weight: 600;
+    color: white;
+}
+
+.main #name input{
+    border-radius: 7px;
+    height: 30px;
+    width: 250px;
+}
+
+.main #colwrap input{
+    border-radius: 7px;
+    height: 30px;
+    width: 573px;
+}
+
+.main button{
+    color: black;
+    width: 105px;
+    height: 45px;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main p,a{
+    color: #a1a8ae ;
+}
+
+@media (max-width: 480px) {
+
+    .Container{
+        flex-direction: column;
+    }
+
+    .nav {
+        margin-top: 0;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .tags p{
+        font-size: small;
+    }
+
+    .dp {
+        margin-top: 35%;
+        width: 100%;
+    }
+    .main {
+        width: 90vw;
+        margin: 10% auto;
+        padding: 20px;
+        padding-left: 25px;
+    }
+    .main #name {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .main #name input {
+        width: 100%;
+    }
+    .main #colwrap input {
+        width: 100%;
+    }
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    width: 15%;
+    height: 15%;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #000000;
+    padding: 20px;
+    font-size: larger;
+    font-weight: 500;
+    text-align: center;
+    z-index: 5;
+    color: #000000;
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .Container{
+        flex-direction: column;
+    }
+
+    .nav {
+        margin-top: 0;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .tags p{
+        font-size: small;
+    }
+
+    .dp {
+        margin-top: 20%;
+        width: 100%;
+        height: fit-content;
+    }
+    .main {
+        width: 90vw;
+        margin: 10% auto;
+        padding: 20px;
+        padding-left: 25px;
+    }
+    .main #name {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .main #name input {
+        width: 100%;
+    }
+    .main #colwrap input {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .Container{
+        flex-direction: column;
+    }
+
+    .nav {
+        margin-top: 0;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .tags p{
+        font-size: small;
+    }
+
+    .dp {
+        margin-top: 20%;
+        width: 100%;
+        height: fit-content;
+    }
+    .main {
+        width: 90vw;
+        margin: 10% auto;
+        padding: 20px;
+        padding-left: 25px;
+    }
+    .main #name {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .main #name input {
+        width: 100%;
+    }
+    .main #colwrap input {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .main {
+        width: 60vw;
+        margin: 5% auto;
+        padding: 30px;
+        padding-left: 35px;
+    }
+}
+
+
+@media (min-width: 1201px) {
+    .main {
+        width: 650px;
+        margin: 6% auto;
+        padding: 30px;
+        padding-left: 35px;
+    }
+}

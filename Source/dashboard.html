@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="dashboard.css">    
+    <title>Dashboard</title>
+</head> 
+<body>
+    <script src="dashboard.js"></script>
+    <script src="redirect.js"></script>
+
+    <div class="container">
+       <header class="nav">
+        <a href="homepage.html"><img id="logo" src="logo1.png" alt="logo" height="50px" width="150px"></a>
+        <input id="search" type="text" placeholder="Search..." onkeypress="handleKeyPress(event)">
+        <ul id="nav_ul">
+            <a href="homepage.html">HOME</a>
+            <a href="project.html">PROJECTS</a>
+            <a href="repository.html">REPOSITORIES</a>
+            <a id="opacity">PROFILE</a>
+        </ul>
+        <button id="opp" onclick="changeTheme('dashboard_b.css')"><img src="logo_opp.jpg" alt="" width="115px" height="40px"></button>
+        <button id="barbie" onclick="changeTheme('dashboard.css')"><img src="Logo_barbie.png" alt="" width="90px" height="35px"></button>
+    </header>
+        </div>
+ 
+    <div class="bottom">
+        <div class="left">
+            <img id="robo" src="robot_hand1.jpg" alt="cool pic" height="220px" width="950px">
+        <div class="img">
+            <img id="avatar" src="avatar.jpeg" alt="">
+        </div>
+            <div class="buttons">
+                <button id="post"  onclick="document.location.href='addpost.html'"><a id="addpost" href="create post.html">Add a Post</a></button>
+                <button id="edit"  onclick="document.location.href='edit profile.html'"><a id="editprofile" href="edit profile.html">Edit Profile</a></button>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            
+        <div class="info">
+            <br>
+            <h2>Appi Balaji</h2>
+            <p>Student | Web Dev</p>
+            <br>
+            <img src="https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/2019/05/amrita-c20-logo-colored.svg" alt="amrita" width="150px">
+            <p>Amrita Vishwa Vidyapeetham</p>
+            <br>
+            <p>Bio : I'm a passionate student, web developer.</p>
+            <br>
+            <h3>Experience</h3>
+            <br>
+            <p>&RightArrow; Won Google Hackathon</p>
+            <p>&RightArrow; Certified Python, Java programmer</p>
+            <br>
+            <h3>My posts</h3>
+            <br>
+            <div class="div1" id="projectdiv">
+                <img src="Django.jpg" alt="project" width="330px" height="170px" id="hehe">
+                <h1>Django Dash</h1>
+                <p>Accelerate your Django journey.</p>
+                <div class="hidden">
+                    <a href="" class="hiddenbutton">1.5k &hearts;</a>
+                    <a href="" class="hiddenbutton">1.5k <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                        <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                        <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                      </svg></a>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
+        <div class="right">
+            <h2>People also viewed</h2>
+            <br>
+            <div class="prof1">
+            <div class="img">
+            <img src="whatislove.jpg" alt="OUOUOUOUOUOUOU" width="60px">
+        </div>
+            <div class="whatislove">
+            <span>Mike'O Hearn </span>
+            <button id="followButton" onclick="toggleFollow(this)">Follow</button>
+            <p>What is Love?</p>
+        </div>
+    </div>
+    <br>
+        <hr>
+        <br>
+        <div class="prof1">
+            <div class="img">
+            <img src="monday.jpeg" alt="OUOUOUOUOUOUOU" width="60px" height="60px">
+        </div>
+            <div class="whatislove">
+            <span>Hugh Jass</span>
+            <button id="monday" onclick="toggleFollow(this)">Follow</button>
+            <p>Monday left me broken</p>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="prof1">
+        <div class="img">
+        <img src="rizz.png" alt="OUOUOUOUOUOUOU" width="60px" height="60px">
+    </div>
+        <div class="whatislove">
+        <span>Riyaz Khan</span>
+        <button id="monday0" onclick="toggleFollow(this)">Follow</button>
+        <p>Certified Lover boy</p>
+    </div>
+</div>
+<br>
+<hr>
+<br>
+<div class="prof1">
+    <div class="img">
+    <img src="ewrin.jpg" alt="OUOUOUOUOUOUOU" width="60px" height="60px">
+</div>
+    <div class="whatislove">
+    <span>Ewrin</span>
+    <button id="monday1" onclick="toggleFollow(this)">Follow</button>
+    <p>Ewrin</p>
+</div>
+</div>
+<br>
+    <hr>
+    <br>
+    <div class="prof1">
+        <div class="img">
+        <img src="thisguy.jpg" alt="OUOUOUOUOUOUOU" width="60px" height="60px">
+    </div>
+        <div class="whatislove">
+        <span>This guy</span>
+        <button id="monday2" onclick="toggleFollow(this)">Follow</button>
+        <p>Woof Woof</p>
+    </div>
+</div>
+<br>
+    <hr>
+    <br>
+    <div class="prof1">
+        <div class="img">
+        <img src="girish.jpg" alt="OUOUOUOUOUOUOU" width="60px" height="60px">
+    </div>
+        <div class="whatislove">
+        <span>Girish</span>
+        <button id="monday3" onclick="toggleFollow(this)">Follow</button>
+        <p>Onnichan UwU</p>
+    </div>
+</div>
+<br>
+    </div>
+</div>
+        </div>
+    </div>
+</body>
+</html>

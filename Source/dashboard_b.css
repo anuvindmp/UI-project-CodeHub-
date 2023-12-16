@@ -1,0 +1,650 @@
+*{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #ff00b3;
+    
+}
+
+.nav{
+    margin-left: 0.84%;
+    margin-top: 0.5%;
+    z-index: 3;
+    width:98vw;
+    height:10vh;
+    background: rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 12px;
+    border: solid 0.00001cm rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    scroll-behavior: none;
+    overflow: hidden;
+}
+
+#logo{
+    margin-left: 17px;
+}
+
+
+#search{
+    padding: 6px 12px;
+    width: 20vw;
+    height: 3.5vh;
+    border-radius: 10px;
+    background-color: #ff00b3;
+    color: white;
+    border: 0.00001cm solid rgb(84, 84, 84);
+}
+
+ul{
+    width: 24vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    column-gap: 30px;
+}
+
+ul a{
+    text-decoration: none;
+    color: white;
+    opacity: 60%;
+    transition: 0.3s;
+}
+
+ul a:hover{
+    font-size: large;
+}
+
+#opacity{
+    color: white;
+    opacity: 110%;
+}
+
+::placeholder{
+    color: white;
+    font-family: 'poppins', sans-serif;
+}
+
+button{
+    background-color: #ee71c3;
+    border: 0px;
+    border-radius: 15px;
+}
+
+#opp{
+    display: none;
+}
+
+#oppenpic{
+    display: none;
+}
+
+#barbie{
+    margin-right: 17px;
+    transition: 0.3s;
+    background-color: #f29ad8;
+}
+
+#barbie:hover{
+    transform: scale(1.2);
+}
+
+.bottom{
+    font-family: 'Poppins', sans-serif;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 7rem ;
+}
+
+.left{
+    margin-top: 4%;
+}
+
+.bottom .left{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #ee71c3;
+    border-radius: 20px;
+    padding-bottom: 30px;
+}
+
+#robo{
+    border-radius: 20px 20px 0px 0px;
+}
+
+#avatar{
+    border-radius: 50%;
+}
+
+.bottom{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.bottom .img{
+    position: absolute;
+    z-index: 2;
+    padding-bottom: 660px;
+    padding-left: 50px;
+}
+
+.bottom .buttons{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    padding: 10px;
+}
+
+.left,.right{
+    background-color: #f29ad8;
+}
+
+#post{
+    background-color: #ff00b3;
+    color: white;
+    border: 1px;
+    width: 90px;
+    height: 35px;
+    padding: 0px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#edit{
+    background-color: white;
+    color: black;
+    border: 1px;
+    width: 90px;
+    height: 35px;
+    padding: 0px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 60px;
+}
+
+.info h2{
+    color: white;
+    font-weight: 550;
+}
+
+.info p{
+    color: white;
+}
+
+.info h3{
+    color: white;
+    font-variant: small-caps;
+    font-weight: 600;
+    font-size:x-large;
+}
+
+.info ul{
+    color: white;
+}
+
+.div1{
+    align-items: center;
+    width: 38.4%;
+    height: 340px;
+    border-radius: 12px;
+    background-color: #ee71c3;
+    box-shadow: rgba(255, 255, 255, 0.432) 1.95px 1.95px 2.6px;
+}
+
+.div1 h1{
+    color: white;
+    padding-top: 8px;
+    padding-left: 15px;
+    font-size: 25px;
+}
+
+.div1 p{
+    padding-left: 15px;
+}
+
+.hidden{ 
+    display: none;
+    margin-top:10%;
+    width: 100%;
+    height: 30px;
+    border-radius: 0px 0px 12px 12px;
+    background-color: white;
+    box-shadow: rgba(255, 255, 255, 0.432) 1.95px 1.95px 2.6px;
+    transition: 0.2s ease;
+}
+
+.div1 :hover + .hidden{
+    display: block;
+} 
+
+.hiddenbutton{
+    margin: 3px;
+    margin-left: 10px;
+    padding: 4px;
+    padding-left:9px ;
+    padding-right:9px ;
+    width:60px;
+    height: 23px;
+    border-radius: 10px;
+    background-color: #ee71c3;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#hehe{
+    border-radius: 12px;
+    margin-top: 35px;
+    margin-left: 6px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+    background-color: #ee71c3;
+    border-radius: 20px;
+    padding: 20px;
+    height: 120vh;
+    width: 28vw ;
+    margin-left: 65%;
+    margin-right: 20px;
+    margin-top: 30px;
+    padding-left: 46px;
+    padding-top: 32px;
+    font-family: 'Poppins', sans-serif ;
+    
+}
+
+.right button{
+    background-color: white;
+    color: black;
+    border: 1px;
+    width: 90px;
+    height: 35px;
+    padding: 0px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 8px;
+    margin-left: 30px;
+    justify-content: center;
+}
+
+.right img{
+    border-radius: 50%;
+}
+
+span{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.prof1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+}
+
+.whatislove button{
+    margin-left: 80px;
+}
+
+#monday{
+    margin-left: 112px;
+}
+
+#monday0{
+    margin-left: 103px;
+}
+
+#monday1{
+    margin-left: 163px;
+}
+
+#monday2{
+    margin-left: 130px;
+}
+
+#monday3{
+    margin-left: 157px;
+}
+
+#monday4{
+    margin-left: 107px;
+}
+
+#followButton.following {
+    background-color: #ff00b3;
+    color: white;
+}
+
+#monday.following {
+    background-color: #ff00b3;
+    color: white;
+}
+
+#monday0.following {
+    background-color: #ff00b3;
+    color: white;
+}
+
+#monday1.following {
+    background-color: #ff00b3;
+    color: white;
+}
+
+#monday2.following {
+    background-color: #ff00b3;
+    color: white;
+}
+
+#monday3.following {
+    background-color: #ff00b3;
+    color: white;
+}
+
+#monday4.following {
+    background-color: #ff00b3;
+    color: white;
+}
+
+#addpost{
+    text-decoration: none;
+    color: white;
+}
+
+#editprofile{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 480px) {
+    .nav {
+        margin-top: 0;
+        height: auto;
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    #logo {
+        margin: 10px 0;
+    }
+
+    #search {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    ul {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+        font-size: small;
+    }
+
+    body{
+        overflow: auto;
+    }
+    .bottom{
+        width: 100vw;
+        
+    }
+    .info{
+        width: 100vw;
+    }
+    img{
+        width: 25%;
+        height: 25%;
+    }
+    #robo{
+        display: none;
+    }
+    body{
+        font-size: smaller;
+    }
+    .head {
+        display: none;
+    }
+    #barbie{
+        width: 10%;
+    }
+    button{
+        position: absolute;
+        left: 45%;
+        top: 15%;
+    }
+    #avatar{
+        width: 45%;
+    }
+    #hehe{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width: 768px) {
+    .nav {
+        margin-top: 0;
+        height: auto;
+        flex-direction: column;
+    }
+
+    #logo {
+        margin: 10px 0;
+    }
+
+    #search {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    ul {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+        font-size: small;
+    }
+
+    body{
+        overflow: scroll;
+    }
+    .bottom{
+        width: 100vw;
+        margin-top: 20%;
+    }
+    .info{
+        width: 100vw;
+    }
+    img{
+        width: 25%;
+        height: 25%;
+    }
+    #robo{
+        display: none;
+    }
+    body{
+        font-size: smaller;
+    }
+    .head {
+        display: none;
+    }
+    .right{
+        display: none;
+    }
+    #editprofile{
+        position: absolute;
+        left: 5%;
+    }
+    button{
+        position: absolute;
+        left: 45%;
+        top: 15%;
+    }
+    #avatar{
+        width: 45%;
+    }
+    #hehe{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width:1024px) {
+    .nav {
+        margin-top: 0;
+        height: auto;
+        flex-direction: column;
+    }
+
+    #logo {
+        margin: 10px 0;
+    }
+
+    #search {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    ul {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+        font-size: small;
+    }
+
+    .bottom{
+        width: 100vw;
+        margin-top: 20%;
+    }
+
+    body{
+        overflow: scroll;
+    }
+    .container{
+        width: 50vw;
+    }
+    .info{
+        width: 100vw;
+    }
+    img{
+        width: 25%;
+        height: 25%;
+    }
+    #robo{
+        display: none;
+    }
+    body{
+        font-size: smaller;
+    }
+    .head {
+        display: none;
+    }
+    .right{
+        display: none;
+    }
+    button{
+        position: absolute;
+        left: 45%;
+        top: 15%;
+    }
+    #avatar{
+        width: 45%;
+    }
+    #hehe{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width:1500px) {
+    .nav {
+        margin-top: 0;
+        height: auto;
+        flex-direction: column;
+    }
+
+    #logo {
+        margin: 10px 0;
+    }
+
+    #search {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    ul {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+        font-size: small;
+    }
+
+    .bottom{
+        width: 100vw;
+        margin-top: 20%;
+    }
+
+    body{
+        overflow: scroll;
+    }
+    .container{
+        width: 50vw;
+    }
+    .info{
+        width: 100vw;
+    }
+    img{
+        width: 25%;
+        height: 25%;
+    }
+    #robo{
+        display: none;
+    }
+    body{
+        font-size: smaller;
+    }
+    .head {
+        display: none;
+    }
+    .right{
+        display: none;
+    }
+    button{
+        position: absolute;
+        left: 45%;
+        top: 15%;
+    }
+    #avatar{
+        width: 45%;
+    }
+    #hehe{
+        width: 90%;
+    }
+}

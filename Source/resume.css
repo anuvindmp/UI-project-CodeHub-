@@ -1,0 +1,255 @@
+
+body {
+    background-color: rgb(214, 255, 250);
+    font-family: 'poppins', sans-serif;
+    
+}
+
+.container {
+    margin: 50px auto;
+    max-width: 100%;
+    height: 95%;
+}
+
+.box {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    padding: 0px;
+    margin: 0px;
+    width: 500px;
+    height: 740px;
+    background: #03B6E1;
+    border-radius: 40px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.overlay {
+    position: absolute;
+    top: 30px;
+    left: 475px;
+    padding: 0px;
+    margin: 0px;
+    width: 65%;
+    height: 740px;
+    background: #ffffff;
+    border-radius: 40px;
+}
+
+.right {
+    position: absolute;
+    top: 30px;
+    left: 1600px;
+    padding: 0px;
+    margin: 0px;
+    width: 70px;
+    height: 390px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+}
+
+.box img {
+    position: absolute;
+    top: 130px;
+    left: 92px;
+    height: 250px;
+    width: 250px;
+    margin: 0px;
+    padding: 0px;
+    border: 7px solid white;
+    border-radius: 50%;
+}
+
+.overlay h1{
+    font-size: 40px;
+    margin-left: 126.5px;
+    margin-bottom: -25px;
+}
+
+.box h1{
+    position: absolute;
+    top: 450px;
+    left: 100px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 40px;
+}
+
+.overlay p{
+    font-size: 25px;
+    margin-left: 125px;
+    font-weight: 50;
+}
+
+.student{
+    position: absolute;
+    top: 510px;
+    left: 168px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 25px;
+    font-weight: 50;
+}
+
+.icons{
+    position: absolute;
+    top: 572px;
+    left: 165px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#portfolio{
+    position: absolute;
+    top: 625px;
+    left: 138px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #03B6E1;
+    border:2px solid white;
+    border-radius: 25px;
+    transition: 0.4s;
+}
+.container a{
+    text-decoration: none;
+    color: #ffffff;
+}
+#portfolio:hover{
+    transform: scale(1.5);
+    transition: background 0.5s, transform 0.5s ease-out, fill 0.5s;
+}
+
+#me{
+    color: #03B6E1;
+}
+#aboutMe{
+    font-size: 18px;
+}
+#table1{
+    padding-right: 80px;
+    padding-left: 35px;
+    font-size: 18px;
+}
+#table2{
+    font-size: 18px;
+}
+
+#ska{
+    padding-right: 30px;
+    padding-left: 35px;
+}
+
+#logo{
+    color:#03B6E1;
+    text-decoration: none;
+    padding-left: 15px;
+}
+
+.right svg{
+    fill:#03B6E1;
+    transition: background 0.5s, transform 0.5s ease-out, fill 0.5s;
+}
+svg:hover{
+    fill:aqua;
+    transform: scale(1.5);
+    transition: background 0.5s, transform 0.5s ease-out, fill 0.5s;
+}
+  
+/* media queries */
+@media (max-width: 767px) {
+    .box,
+    .overlay,
+    .right {
+        position: static;
+        max-width: 1000px;
+        width: 768px;
+        height: auto;
+        border-radius: 0;
+        margin: -80px;
+        padding: 45px;
+    }
+    .right{
+        display: none;
+    }
+    .box img {
+        position: static;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .box h1 {
+        position: static;
+        font-size: 15px;
+        margin-top: 30px;
+    }
+
+    .overlay p {
+        font-size: 10px;
+        margin-left: 0;
+    }
+
+    .student {
+        position: static;
+        margin-top: 20px;
+        font-size: 10px;
+    }
+
+    .icons {
+        position: static;
+        margin-top: 20px;
+    }
+
+    #portfolio {
+        position: static;
+        margin-top: 20px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .box,
+    .overlay,
+    .right {
+      position: static;
+      max-width: 768px;
+      width: 90%;
+      height: auto;
+      border-radius: 0;
+      margin: 30px auto;
+      padding: 30px;
+    }
+    .right{
+        display: none;
+    }
+    .box img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .box h1 {
+      font-size: 24px;
+      margin-top: 15px;
+    }
+  
+    .overlay p {
+      font-size: 18px;
+    }
+  
+    .student {
+      font-size: 18px;
+    }
+  
+    .icons {
+      margin-top: 10px;
+    }
+  
+    #portfolio {
+      font-size: 16px;
+    }
+  }
+  

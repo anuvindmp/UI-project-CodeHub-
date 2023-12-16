@@ -1,0 +1,357 @@
+body{
+    background-color: #ff00b3;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+
+}
+
+.dp_img img {
+	border-radius: 50%;
+	border: 5px solid rgba(255, 255, 255, 0.432);
+    margin-top: 30px;
+    
+}
+
+.Container{
+    display: flex;
+    background-color: #ff00b3;
+    justify-content: space-between;
+
+}
+
+.dp{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 35vw;
+    background-color: #f29ad8;
+    border-radius: 15px;
+    padding: 10px;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 15px;
+}
+
+
+.prof_name{
+    margin-top: 0px;
+}
+
+.prof_mail{
+    margin-top: -15px;
+    font-size: small;
+}
+
+.abt{
+    margin-top: 100px;
+    color: white;
+}
+
+.abt_descrip{
+    margin-top: -20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav{
+    margin-left: 0.84%;
+    margin-top: 0%;
+    width:98vw;
+    height:10vh;
+    background: #f29ad8;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    scroll-behavior: none;
+    overflow: hidden;
+}
+
+#logo{
+    margin-left: 17px;
+}
+
+
+button{
+    background-color: #ff00b3;
+    border: 0px;
+    border-radius: 15px;
+}
+
+#opp{
+    display: none;
+}
+
+#oppenpic{
+    display: none;
+}
+
+#barbie{
+    margin-right: 17px;
+    transition: 0.3s;
+    background-color: #f29ad8;
+}
+
+#barbie:hover{
+    transform: scale(0.9);
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 80vh;
+    width: 65vw;
+    background-color: #f29ad8;
+    border-radius: 5px;
+    padding: 10px;
+    align-items: left;
+    margin-top: 100px;
+    margin-right: 15px;
+}
+
+.Save{
+    width: 120px;
+    height: 50px;
+    color: white;
+    background-color: #ff00b3;
+    font-size: medium;
+    font-family: "poppins", sans-serif;
+    transition: 0.3s;
+}
+
+.butt{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+button:hover{
+    transform: scale(0.9);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #f29ad8;
+    border-radius: 20px;
+    padding: 30px;
+    padding-top: 10px;
+    padding-left: 35px;
+    width: 650px;
+    margin-top: 6%;
+    margin-right: 10%;
+}
+
+.main #name{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
+    color: black;
+}
+
+.main h2{
+    font-weight: 600;
+    color: black;
+}
+
+.main #name input{
+    border-radius: 7px;
+    height: 30px;
+    width: 250px;
+}
+
+.main #colwrap input{
+    border-radius: 7px;
+    height: 30px;
+    width: 573px;
+}
+
+.main #number{
+    color: black;
+}
+
+.main #pass{ 
+    color: black;
+}
+
+.main #pass #passmol{
+    font-size: small;
+    color: black;
+}
+
+.main #mail{
+    color:black;
+}
+
+.main button{
+    background-color: #ff00b3;
+    margin: 2px;
+    color: black;
+    width: 105px;
+    height: 45px;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main p,a{
+    color: black ;
+}
+
+@media screen and (max-width: 576px) {
+    .dp,.right{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 35%;
+    }
+
+    .Container{
+        flex-direction: column;
+    }
+
+    .nav {
+        margin-top: 0;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .main {
+        width: 100%;
+        padding: 10px;
+    }
+    .main #name {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .main #name input,
+    .main #colwrap input {
+        width: 100%;
+    }
+    .main button {
+        width: 100%;
+    }
+
+    .butt {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .Cancel,
+    .Save {
+        width: 100%;
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .dp,.right{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 15%;
+    }
+
+    .Container{
+        flex-direction: column;
+    }
+
+    .nav {
+        margin-top: 0;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .main {
+        width: 100%;
+        padding: 10px;
+    }
+    .main #name {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .main #name input,
+    .main #colwrap input {
+        width: 100%;
+    }
+    .main button {
+        width: 100%;
+    }
+
+    .butt {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .Cancel,
+    .Save {
+        width: 100%;
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width:1024px) {
+    .dp,.right{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 15%;
+    }
+
+    .Container{
+        flex-direction: column;
+    }
+
+    .nav {
+        margin-top: 0;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .main {
+        width: 100%;
+        padding: 10px;
+    }
+    .main #name {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .main #name input,
+    .main #colwrap input {
+        width: 100%;
+    }
+    .main button {
+        width: 100%;
+    }
+
+    .butt {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .Cancel,
+    .Save {
+        width: 100%;
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+}

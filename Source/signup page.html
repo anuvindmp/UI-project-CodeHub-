@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="signup page.css">
+    <title>Sign up</title>
+
+</head>
+<body>
+    <script src="signup page.js"></script> 
+
+    <div class="container">
+
+    <div id="popup" class="popup">
+        <span id="popup-message" class="popup-message"></span>
+    </div>
+
+    <div class="head">
+        <img src="logo2.png" height="50px" width="200px"></img>
+        <div id="headright">
+            <button id="opp" onclick="changeTheme('signup page2.css')"><img src="logo_opp.jpg" alt="" width="115px" height="40px"></button>
+            <button id="barbie" onclick="changeTheme('signup page.css')"><img src="Logo_barbie.png" alt="" width="90px" height="35px"></button>        
+        <button id="login" onclick="document.location.href='login.html'">Log in</button>
+
+    </div>
+    </div>
+    <div class="bottom">
+    <div id="left">
+    <div class="words">
+        <h2>Collab with us</h2>
+        <h3>Access thousands of projects and repositories</h3>
+    </div>
+    <img src="pic.jpg" height="350px" width="550px"></img>
+</div>
+    <div class="main">
+        <h2>Sign up now</h2>
+        <br>
+        <div id="name">
+        <div id="firstname">
+        <p>First name</p>
+        <input type="text">
+        </div>
+        <div id="lastname"> 
+        <p>Last name</p>
+        <input type="text">
+        </div>
+    </div>
+    <br>
+        <div id="colwrap">
+        <div id="mail">
+            <p>Email address</p>
+            <input type="text">
+        </div>
+        <br>
+        <div id="number">
+            <p>Phone number</p>
+            <input type="text">
+        </div>
+        <br>
+        <div id="pass">
+            <p>Password</p>
+            <input type="password">
+            <p id="passmol">Use 8 or more characters</p>
+        </div>
+        <br>
+        <br>
+        <button id="signupButton" onclick="return validateForm();">Sign Up</button>
+    </div>
+    <br>
+    </div> 
+    </div>
+    </div>
+
+
+    
+</body>
+</html>

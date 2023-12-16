@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="login.css ">
+    <title>Log in</title>
+</head>
+<body> 
+
+    <div id="popup" class="popup">
+        <span id="popup-message" class="popup-message"></span>
+    </div>
+
+    <script src="login.js"></script>
+    <div class="container">
+    <div class="head">
+        <img src="logo2.png" height="50px" width="200px"></img>
+        <div id="headright">
+            <button id="opp" onclick="changeTheme('login2.css')"><img src="logo_opp.jpg" alt="" width="115px" height="40px"></button>
+            <button id="barbie" onclick="changeTheme('login.css')"><img src="Logo_barbie.png" alt="" width="90px" height="35px"></button>        
+        
+    </div>
+    </div>
+    <div class="bottom">
+    <div id="left">
+    <div class="words">
+        <h2>Collab with us</h2>
+        <h3>Access thousands of projects and repositories</h3>
+        <br>
+    </div>
+    <img src="pic.jpg" height="350px" width="550px"></img>
+</div>
+    <div class="main">
+        <br>
+        <h1>Log in</h1>
+    <br>
+        <div id="colwrap">
+        <div id="mail">
+            <p>Email address</p>
+            <input type="text">
+        </div>
+        <br>
+        <div id="pass">
+            <p>Password</p>
+            <input type="password" onkeypress="handleKeyPress(event)">
+        </div>
+        <br>
+        <br>
+        <button id="log" onclick="return validateForm();" >Login</button>
+    </div>
+    <br>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

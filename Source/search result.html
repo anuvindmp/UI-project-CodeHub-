@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anybody&display=swap" rel="stylesheet">
+    <link id="theme-style" rel="stylesheet" href="search result.css">
+    <title>results</title>
+</head>
+<body>
+    <script src="search result.js"></script>
+    <script src="redirect.js"></script>
+
+    <div class="nav">
+        <a href="homepage.html"><img id="logo" src="logo1.png" alt="logo" height="50px" width="150px"></a>
+        <input id="search" type="text" placeholder=" Search..." onkeypress="handleKeyPress(event)">
+        <ul> 
+            <a id="hover" href="homepage.html">HOME</a>
+            <a id="hover" href="project.html">PROJECTS</a>
+            <a id="hover" href="repository.html">REPOSITORIES</a>
+            <a id="hover" href="dashboard.html">PROFILE</a>
+        </ul>
+        <button id="opp" onclick="changeTheme('search result2.css')"><img src="logo_opp.jpg" alt="" width="115px" height="40px"></button>
+        <button id="barbie" onclick="changeTheme('search result.css')"><img src="Logo_barbie.png" alt="" width="90px" height="35px"></button>        
+    </div>
+
+    <div class="filter">
+        <div class="nav1">
+            <ul>
+                <div class="sort"><a id="Sort"><p>Filter by</p></a></div> 
+                <a href="search result.html">PROJECTS</a>
+                <a href="noresult.html">USERS</a>
+                <a href="noresult.html">REPOSITORIES</a>
+            </ul>
+        </div>
+    </div>
+
+    <div class="text">
+        <p>- Search Results -</p>
+    </div>
+
+    <div class="project">
+
+        <div class="div1" id="projectdiv">
+            <img src="Django.jpeg" alt="project" width="340px" height="170px" id="hehe">
+            <h1>Django Dash</h1>
+            <p>Accelerate your Django journey.</p>
+            <div class="hidden">
+                <a href="" class="hiddenbutton">1.5k &hearts;</a>
+                <a href="" class="hiddenbutton">5.3k <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                  </svg></a>
+            </div>
+        </div>
+        <div class="div2" id="projectdiv">
+            <img src="scratch.jpeg" alt="project" width="340px" height="170px"id="hehe">
+            <h1>Scratch Craft</h1>
+            <p>Unleash your creativity with Scratch.</p>
+            <div class="hidden">
+                <a href="" class="hiddenbutton">2.5k &hearts;</a>
+                <a href="" class="hiddenbutton">7.5k <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                  </svg></a>
+            </div>      
+        </div>
+        <div class="div3" id="projectdiv">
+            <img src="node.png" alt="project" width="340px" height="170px" id="hehe">
+            <h1>Code node</h1>
+            <p>Node js: Unleash the power</p>
+            <div class="hidden">
+                <a href="" class="hiddenbutton">6.9k &hearts;</a>
+                <a href="" class="hiddenbutton">8.5k <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                  </svg></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="prev">
+            <a href="">Prev Page</a>
+        </div>
+        <div class="next">
+            <a href="search result2.html">Next Page</a>
+        </div>
+    </div>
+
+</body>
+</html>

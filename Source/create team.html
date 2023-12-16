@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anybody&display=swap" rel="stylesheet">
+    <link id="theme-style" rel="stylesheet" href="create team.css">
+    <title>create team</title>
+</head>
+<body> 
+    <script src="create team.js"></script>
+
+    <div id="popup" class="popup">
+        <span id="popup-message" class="popup-message"></span>
+    </div>
+
+    <div class="nav">
+        <a href="homepage.html"><img id="logo" src="logo1.png" alt="logo" height="50px" width="150px"></a>
+        <button id="opp" onclick="changeTheme('create team2.css')"><img src="logo_opp.jpg" alt="" width="115px" height="40px"></button>
+        <button id="barbie" onclick="changeTheme('create team.css')"><img src="Logo_barbie.png" alt="" width="90px" height="35px"></button>        
+    </div>
+        
+    <div class="Container">
+        <div class="dp">
+            <p class="Create">Create A Team</p>
+                <div class="dp_img">
+                        <img src="team.jpg" alt="bald guy" class="shadow" height="100px" >
+                </div>
+                <input type="text" name="tname" id="tname" placeholder="Enter Team Name...">
+                <p class="tags">Language</p>
+                <label><input type="checkbox" class="tag" name="tag1" id="tag">PYTHON</label>
+                <label><input type="checkbox" class="tag" name="tag2" id="tag">JAVA</label>
+                <label><input type="checkbox" class="tag" name="tag3" id="tag">HTML/CSS/JS</label>
+                <label><input type="checkbox" class="tag" name="tag4" id="tag">C#</label>
+                <label><input type="checkbox" class="tag" name="tag5" id="tag">C++</label>       
+        </div>
+        <div class="main">
+        <h2>Team Members</h2>
+        <br>
+        <div id="name">
+        <div id="firstname">
+        <p>Team member #1</p>
+        <input type="text">
+        <textarea placeholder="bio..."></textarea>
+        </div>
+        <div id="lastname">
+        <p>Team member #2</p>
+        <input type="text">
+        <textarea placeholder="bio..."></textarea>
+        </div>
+    </div>
+    <br>
+    <div id="name">
+        <div id="thirdname">
+        <p>Team member #3</p>
+        <input type="text">
+        <textarea placeholder="bio..."></textarea>
+        </div>
+        <div id="fourthname">
+        <p>Team member #4</p>
+        <input type="text">
+        <textarea placeholder="bio..."></textarea>
+        </div>
+    </div>
+        <br>
+    
+        <div class="butt">
+            <button class="Cancel"  onclick="document.location.href='homepage.html'">Cancel</button>
+            <button class="create"  onclick="validateForm()">Create</button>
+        </div>
+        
+
+        </div>
+    </div>
+</body>
+</html>

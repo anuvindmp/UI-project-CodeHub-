@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link link id="theme-style" rel="stylesheet" type="text/css" href="edit profile.css">
+    <title>Edit Profile</title>
+</head>
+<body>
+<script src="edit profile.js"></script>
+
+    <div class="nav">
+        <a href="homepage.html"><img id="logo" src="logo1.png" alt="logo" height="50px" width="150px"></a>
+        <button id="opp" onclick="changeTheme('edit profile2.css')"><img src="logo_opp.jpg" alt="" width="115px" height="40px"></button>
+        <button id="barbie" onclick="changeTheme('edit profile.css')"><img src="Logo_barbie.png" alt="" width="90px" height="35px"></button>        
+    </div>
+        
+    <div class="Container"> 
+        <div class="dp">
+                <div class="dp_img">
+                        <img src="avatar.jpeg" alt="bald guy" class="shadow" height="100px" >
+                </div>
+                <h2 class="prof_name">Appi Balaji</h2>
+                <p class="prof_mail">appi@balaji.com</p>
+                <h2 class="abt">About</h2>
+                <p class="abt_descrip">Passionate student, web developer</p>
+        </div>
+        <div class="main">
+            <h2>Edit Profile</h2>
+            <div id="name">
+            <div id="firstname">
+            <p>First name</p>
+            <input type="text">
+            </div>
+            <div id="lastname">
+            <p>Last name</p>
+            <input type="text">
+            </div>
+        </div>
+        <br>
+            <div id="colwrap">
+            <div id="mail">
+                <p>Email address</p>
+                <input type="text">
+            </div>
+            <br>
+            <div id="number">
+                <p>Phone number</p>
+                <input type="text">
+            </div>
+            <br>
+            <div id="pass">
+                <p>Old Password</p>
+                <input type="password" onkeypress="handleKeyPress(event)">
+            </div>
+            <div id="pass">
+                <p>New Password</p>
+                <input type="password" onkeypress="handleKeyPress(event)">
+                <p id="passmol">Use 8 or more characters with a mix of letters, numbers & symbols</p>
+            </div>
+            <div id="pass">
+                <p>Confirm New Password</p>
+                <input type="password" onkeypress="handleKeyPress(event)">
+            </div>
+        <div class="butt">
+            <button class="Cancel"  onclick="document.location.href='dashboard.html'"><a href="dashboard.html">Cancel</a></button>
+            <button class="Save"  onclick="document.location.href='dashboard.html'"><a href="dashboard.html">Save</a></button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

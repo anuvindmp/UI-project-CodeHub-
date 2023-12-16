@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+}
+
+body{
+    background-color: #ff00b3;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'poppins', sans-serif;
+    overflow: hidden;
+}
+
+.nav{
+    margin-left: 0.84%;
+    margin-top: 1%;
+    width:96vw;
+    height:10vh;
+    background: rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 12px;
+    border: solid 0.00001cm rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    scroll-behavior: none;
+    overflow: hidden;
+}
+
+#logo{
+    margin-left: 17px;
+}
+
+#search{
+    padding: 6px 12px;
+    width: 20vw;
+    height: 3.5vh;
+    border-radius: 10px;
+    background-color: #ee71c3;
+    color: white;
+    border: 0.00001cm solid rgb(255, 255, 255);
+}
+
+ul{
+    width: 30vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    gap: 25px;
+}
+
+ul a{
+    text-decoration: none;
+    color: white;
+    opacity: 60%;
+    transition: 0.3s;
+}
+
+ul a:hover{
+    font-size: large;
+}
+
+#opacity{
+    color: white;
+    opacity: 100%;
+}
+
+::placeholder{
+    color: white;
+    font-family: 'poppins', sans-serif;
+}
+
+button{
+    background-color: #e305ad;
+    border: 1px solid white;
+}
+
+#opp{
+    display: none;
+}
+
+#barbie{
+    background-color: #f29ad8;  
+    border: 0px;
+    border-radius: 12px;
+}
+
+.mainbody{
+    margin-top: 9%;
+}
+
+.repository1{
+    font-family: 'poppins' sans-serif;
+    margin-top: 35px;
+    height: 30vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+
+}
+
+.repository2{
+    margin-top: 35px;
+    height: 30vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+.repository3{
+    margin-top: 35px;
+    height: 30vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+.mainbody{
+    display: flex ;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    width: 100%;
+    height: 70vh;
+    flex-direction: column;
+    background-color: #ff00b3;
+    justify-content:space-between;
+}
+
+.codecentral1{
+    display: flex;
+    align-items: center;
+    padding-left: 45px;
+    font-size: 25px;
+    color: black;
+    height: 30%;
+    background-color: #f29ad8;
+    border-radius: 13px 13px 0px 0px;
+    border: 3px solid white;
+}
+
+.codecentral2{
+    display: flex;
+    align-items: center;
+    padding-left: 45px;
+    font-size: 25px;
+    color: black;
+    height: 30%;
+    background-color: #f29ad8;
+    border-radius: 13px 13px 0px 0px;
+    border: 3px solid white;
+}
+
+.description1{
+    display: flex;
+    align-items: flex-start;
+    height: 50%;
+    background-color: #f658b8;
+    font-size: 15px;
+    color: black;
+    padding-left: 45px;
+    border-radius: 0px;
+    border: 3px solid white;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.but1{
+    display: flex;
+    gap: 15px;
+}
+
+.description2{
+    display: flex;
+    align-items: flex-start;
+    height: 50%;
+    font-size: 15px;
+    color: black;
+    padding-left: 45px;
+    background-color: #f658b8;
+    border-radius: 0px;
+    border: 3px solid white;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.but2{
+    display: flex;
+    gap: 15px;
+}
+
+.date1{
+    font-size: 15px;
+    color: black;
+    padding-left: 45px;
+    display: flex;
+    align-items: center;
+    height: 20%;
+    background-color: #f29ad8;
+    border-radius: 0px 0px 13px 13px;
+    border: 3px solid white;
+}
+
+.date2{
+    font-size: 15px;
+    color: black;
+    padding-left: 45px;
+    display: flex;
+    align-items: center;
+    height: 20%;
+    background-color: #f29ad8;
+    border-radius: 0px 0px 13px 13px;
+    border: 3px solid white;
+}
+
+.footer{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.prev{
+    height: 45px;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f658b8;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'poppins' sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.next{
+    height: 45px;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f658b8;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'poppins' sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.mainbody h1{
+    font-family: 'anybody',sans-serif;
+    margin-top: 15px;
+    color: white;
+}
+
+.mainbody button{
+    font-family: 'poppins',sans-serif;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+
+}
+
+.prev1,.next1{
+    margin-top: -140px;
+    height: 45px;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ee71c3;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'poppins' sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav1{
+    margin-left: 0.8%;
+    margin-top: 6%;
+    width:96vw;
+    height:7vh;
+    background: rgba(255,255,255,0.1);
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 10px;
+    border: solid 1px white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    scroll-behavior: none;
+    overflow: hidden;
+}
+
+.sort p{
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.ul{
+    width: 35vw;
+}
+
+@media screen and (max-width: 1200px) {
+    .nav, .nav1 {
+        width: 95vw;
+        margin-left: 2.5vw;
+    }
+
+    #search {
+        width: 25vw;
+    }
+
+    ul {
+        width: 32vw;
+        font-size: 18px;
+        gap: 20px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .nav, .nav1 {
+        width: 95vw;
+        height: fit-content;
+        
+    }
+
+    #search {
+        width: 30vw;
+        height: fit-content;
+    }
+
+    .nav ul a{
+        width: 50vw;
+        font-size: 15px;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav, .nav1 {
+        margin-top: 0;
+        height: auto;
+        flex-direction: column;
+    }
+
+    #search {
+        width: 40vw;
+    }
+
+    .mainbody{
+        padding-top: 20%;
+    }
+
+    ul {
+        width: 50vw;
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .but1 button{
+        width: fit-content;
+        font-size: x-small;
+        height: fit-content;
+    }
+
+    .but2 button{
+        width: fit-content;
+        font-size: x-small;
+        height: fit-content;
+    }
+
+    .codecentral1{
+        font-size: small;
+    }
+
+    .description1{
+        font-size: x-small;
+    }
+
+    .date1{
+        font-size: x-small;
+    }
+
+    .codecentral2{
+        font-size: small;
+    }
+
+    .description2{
+        font-size:x-small;
+    }
+
+    .date2{
+        font-size: x-small;
+    }
+
+    .repository1{
+        font-size: 10px;
+        align-content: center;
+    }
+
+    h1{
+        font-size: small;
+    }
+
+    .prev{
+        font-size: small;
+    }
+
+    .next{
+        font-size: small;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .nav, .nav1 {
+        margin-top: 0;
+        height: auto;
+        flex-direction: column;
+    }
+
+    #search {
+        width: 50vw;
+    }
+
+    ul {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+        font-size: small;
+    }
+
+    .mainbody{
+        padding-top: 35%;
+    }
+
+    .but1 button{
+        width: fit-content;
+        font-size: x-small;
+        height: fit-content;
+    }
+
+    .but2 button{
+        width: fit-content;
+        font-size: x-small;
+        height: fit-content;
+    }
+
+    .codecentral1{
+        font-size: small;
+    }
+
+    .description1{
+        font-size: x-small;
+    }
+
+    .date1{
+        font-size: x-small;
+    }
+
+    .codecentral2{
+        font-size: small;
+    }
+
+    .description2{
+        font-size:x-small;
+    }
+
+    .date2{
+        font-size: x-small;
+    }
+
+    .repository1{
+        font-size: 10px;
+        align-content: center;
+    }
+
+    h1{
+        font-size: small;
+    }
+
+    .prev{
+        font-size: small;
+    }
+
+    .next{
+        font-size: small;
+    }
+}
